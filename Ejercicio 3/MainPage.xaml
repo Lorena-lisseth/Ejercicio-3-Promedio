@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio_3.MainPage">
+
+    <ScrollView BackgroundColor="MistyRose">
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="cali.jpg"    
+                HeightRequest="195"
+                HorizontalOptions="Center" />
+
+            <Label Text="Ejercicio 3" TextColor="LimeGreen" FontAttributes="Italic"
+                   HorizontalOptions="Center" FontSize="Subtitle"/>
+
+            <Label Text="Digite la primera nota" TextColor="HotPink" FontAttributes="Bold"/>
+            <Entry x:Name="Nota1" Placeholder="0" TextColor="Black"/>
+
+            <Label Text="Digite la segunda nota" TextColor="HotPink" FontAttributes="Bold"/>
+            <Entry x:Name="Nota2" Placeholder="0" TextColor="Black"/>
+
+            <Label Text="Digite la tercera nota" TextColor="HotPink" FontAttributes="Bold"/>
+            <Entry x:Name="Nota3" Placeholder="0" TextColor="Black"/>
+
+            <Label Text="Digite la cuarta nota" TextColor="HotPink" FontAttributes="Bold"/>
+            <Entry x:Name="Nota4" Placeholder="0" TextColor="Black"/>
+
+            <Label Text="Digite la quinta nota" TextColor="HotPink" FontAttributes="Bold"/>
+            <Entry x:Name="Nota5" Placeholder="0" TextColor="Black"/>
+
+                <Button
+                x:Name="CounterBtn"
+                Text="Ver resultado"
+                Clicked="CounterBtn_Clicked"
+                HorizontalOptions="Center" />
+
+            <Label Text="Resultado" TextColor="Black" FontAttributes="Bold"/>
+            <Entry x:Name="resul" Placeholder="0" IsEnabled="False" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
